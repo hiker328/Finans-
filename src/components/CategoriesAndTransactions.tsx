@@ -14,7 +14,7 @@ import { useToast } from '@/hooks/use-toast';
 import { format } from 'date-fns';
 
 export function CategoriesAndTransactions() {
-  const { categories, transactions, expenses, loading, refreshCategories, refreshTransactions, refreshExpenses } = useFinanceData();
+  const { categories, transactions, expenses, loading, refreshCategories, refreshTransactions } = useFinanceData();
   const { toast } = useToast();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showAddTransaction, setShowAddTransaction] = useState(false);
